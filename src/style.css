@@ -1,0 +1,182 @@
+.sfondo {
+  background-color: #FFEDDF;
+}
+
+/* <--------NavBar-------> */
+.header-navbar {
+  background-color: #0D1321;
+  position: relative;
+  z-index: 1; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  position: relative;
+  z-index: 2; 
+}
+
+.search-bar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  position: relative;
+}
+
+.searchBar {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
+  border-radius: 3px;
+  z-index: 4;
+  width: 100%;
+}
+
+.product-item-searchBar {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-item-searchBar img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+/* <---------Prodotti-------> */
+.card-prodotto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* <-------Bottoni--------> */
+.Btn {
+  background-color: #f0c14b;
+  color: #111;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #ff9900;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  background-color: #ffaa33;
+}
+
+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.checkmark i {
+  color: #00b300;
+  font-size: 20px;
+}
+
+/* <--------Carrello--------> */
+.cart {
+  background-color: #0D1321;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.bg-grey {
+  background-color: #eae8e8;
+}
+
+@media (max-width: 600px) {
+  
+  .card-prodotto {
+    margin: 0 auto 16px;
+  }
+  
+  .searchBar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .product-item-searchBar img {
+    width: 30px;
+    height: 30px;
+  }
+}
